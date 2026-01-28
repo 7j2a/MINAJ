@@ -2,55 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>#MINAJ</title>
 
-  <!-- Sonneta Script -->
-  <link href="https://fonts.cdnfonts.com/css/sonneta-script" rel="stylesheet">
+  <!-- Sonneta Script Font -->
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sonneta-script">
 
   <style>
-    /* Reset */
-    * {
+    /* ===== Reset ===== */
+    *,
+    *::before,
+    *::after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Page */
+    /* ===== Body ===== */
     body {
       height: 100vh;
       font-family: "Times New Roman", serif;
-      color: white;
-      background:
+      color: #ffffff;
+      background-image:
         linear-gradient(
           rgba(120, 60, 160, 0.45),
           rgba(255, 215, 120, 0.45)
         ),
-        url("background_purple_yellow.jpg") center / cover no-repeat;
+        url("background_purple_yellow.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
-    /* Navigation */
+    /* ===== Navigation ===== */
     nav {
-      position: absolute;
+      position: fixed;
       top: 30px;
       right: 50px;
       display: flex;
       gap: 30px;
       font-size: 18px;
+      z-index: 10;
     }
 
     nav a {
-      color: white;
+      color: #ffffff;
       text-decoration: none;
-      transition: opacity 0.3s ease;
+      font-weight: normal;
+      transition: opacity 0.25s ease;
     }
 
     nav a:hover {
       opacity: 0.7;
     }
 
-    /* Center Content */
+    /* ===== Main Content ===== */
     main {
-      height: 100%;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -61,6 +69,7 @@
     .title {
       font-family: "Sonneta Script", cursive;
       font-size: 9rem;
+      line-height: 1;
       letter-spacing: 2px;
     }
 
