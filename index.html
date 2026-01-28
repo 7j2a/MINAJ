@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>#MINAJ</title>
 
-  <!-- Sonneta Script font -->
+  <!-- Sonneta Script -->
   <link href="https://fonts.cdnfonts.com/css/sonneta-script" rel="stylesheet">
 
   <style>
+    /* Reset */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
+    /* Page */
     body {
       height: 100vh;
-      background: 
+      font-family: "Times New Roman", serif;
+      color: white;
+      background:
         linear-gradient(
           rgba(120, 60, 160, 0.45),
           rgba(255, 215, 120, 0.45)
         ),
-        url("background_purple_yellow.jpg") center/cover no-repeat;
-      font-family: "Times New Roman", serif;
-      color: white;
-      overflow: hidden;
+        url("background_purple_yellow.jpg") center / cover no-repeat;
     }
 
     /* Navigation */
-    .nav {
+    nav {
       position: absolute;
       top: 30px;
       right: 50px;
@@ -37,18 +38,18 @@
       font-size: 18px;
     }
 
-    .nav a {
-      text-decoration: none;
+    nav a {
       color: white;
+      text-decoration: none;
       transition: opacity 0.3s ease;
     }
 
-    .nav a:hover {
+    nav a:hover {
       opacity: 0.7;
     }
 
-    /* Center content */
-    .center {
+    /* Center Content */
+    main {
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -64,7 +65,7 @@
     }
 
     .since {
-      margin-top: 10px;
+      margin-top: 12px;
       font-size: 18px;
       letter-spacing: 1px;
     }
@@ -73,20 +74,18 @@
 
 <body>
 
-  <!-- Navigation Tabs -->
-  <div class="nav">
+  <nav>
     <a href="#">Home</a>
     <a href="#">About Us</a>
     <a href="#">Memories</a>
     <a href="#">For You</a>
     <a href="#">Vision</a>
-  </div>
+  </nav>
 
-  <!-- Home Page Content -->
-  <div class="center">
+  <main>
     <div class="title">#MINAJ</div>
     <div class="since">Since: 05.07.2025</div>
-  </div>
+  </main>
 
 </body>
 </html>
